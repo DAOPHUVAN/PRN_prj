@@ -1,0 +1,53 @@
+﻿@using WebClient.Extentions
+@using static WebApi.Controllers.IdentityController
+
+@{
+    ViewData["Title"] = "Detail";
+    TokenResponse auth = SessionManager.Authenticate(Context); 
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(auth == null) 
+{
+    <div class="text-center">
+        <h1 class="display-6">Welcome to PhucHT's BookStore</h1>
+        <p>If you do not account, please <a asp-controller="Users" asp-action="Register"> register here</a>.</p>
+        <p>If you have account,<a asp-controller="Login" asp-action="Index"> login here</a>.</p>
+    </div>
+}
+
+@if(auth != null)
+{
+    <hr />
+    <div class="text-right">
+        <a class="btn btn-danger" asp-controller="Logout" asp-action="Index">Logout</a>
+    </div>
+    <hr />
+    if(auth.User.Role.Description == "Admin")
+    {
+    <h4>Hello Admin, @auth.User.FullName!</h4>
+    <hr />
+    <a asp-controller="Users" asp-action="Index" class="btn btn-primary">Users Panel</a>
+    <a asp-controller="Publishers" asp-action="Index" class="btn btn-primary">Publishers Panel</a>
+    <a asp-controller="Authors" asp-action="Index" class="btn btn-primary">Authors Panel</a>
+    <a asp-controller="Books" asp-action="Index" class="btn btn-primary">Books Panel</a>
+    }
+    if(auth.User.Role.Description == "Customer")
+    {
+        <h4>Hello Customer, @auth.User.FullName!</h4>
+    }
+}
+
+<hr />
+
+<div class="container">
+    @foreach (var item in ViewBag.Book)
+    {
+        <span> @item.Title </span>
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+             class="card-img-top" height="220">
+        <a href="@item.UrlDownload">Link Download</a>
+    }
+</div>
+
+

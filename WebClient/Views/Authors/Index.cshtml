@@ -1,0 +1,444 @@
+﻿@{
+	ViewData["Title"] = "Authors";
+}
+
+<div class="card">
+	<div class="card-header">Authors Panel</div>
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-12 text-white text-center">
+				<button id="btn-refresh" class="btn btn-primary">Refresh</button>
+				<button id="btn-create" class="btn btn-secondary">Create New</button>
+			</div>
+			<div class="col-md-12">
+				<form id="form_create" autocomplete="off">
+					<h4>Please fill information below</h4>
+					<hr />
+					<div class="row">
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="FirstName_Create">FirstName</label>
+							<input type="text" class="form-control" id="FirstName_Create" name="FirstName" placeholder="Enter FirstName"/>
+						</div>
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="LastName_Create">FirstName</label>
+							<input type="text" class="form-control" id="LastName_Create" name="LastName" placeholder="Enter LastName"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Phone_Create">Phone</label>
+							<input type="text" class="form-control" id="Phone_Create" name="Phone" placeholder="Enter Phone"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Email_Create">Email</label>
+							<input type="email" class="form-control" id="Email_Create" name="Email" placeholder="Enter Email"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Address_Create">Address</label>
+							<input type="text" class="form-control" id="Address_Create" name="Address" placeholder="Enter Address"/>
+						</div>
+					
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="City_Create">City</label>
+							<select class="form-control" id="City_Create" name="City" placeholder="Select City">
+
+							</select>
+						</div>
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="State_Create">State</label>
+							<select class="form-control" id="State_Create" name="State" placeholder="Select State">
+
+							</select>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="ZipCode_Create">ZipCode</label>
+							<input type="text" class="form-control" id="ZipCode_Create" name="ZipCode" placeholder="Enter ZipCode"/>
+						</div>
+						
+						<div class="m-2 col-sm-12 text-center">
+							<button type="button" id="form_create_close" class="btn btn-danger">Close</button>
+							<button type="submit" class="btn btn-success">Create</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<div class="col-md-12">
+				<h4>Information</h4>
+				<hr />
+				<table id="table_items" class="table table-striped table-hover table-md-responsive text-center">
+					<thead class="bg-primary text-white">
+						<tr>
+							<th>Id</th>
+							<th>FullName</th>
+							<th>Phone</th>
+							<th>Email</th>
+							<th>Address</th>
+							<th>City</th>
+							<th>State</th>
+							<th>ZipCode</th>
+							<th>...</th>
+						</tr>
+						<tr id="loading">
+							<td colspan="8">
+								<div class="spinner-border text-secondary" role="status">
+									<span class="sr-only">Loading...</span>
+								</div>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				
+
+				<form id="form_update" autocomplete="off" style="gap: 10px">
+					<hr />
+
+					<div class="row">
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Id_Update">Id</label>
+							<input type="text" readonly class="form-control" id="Id_Update" name="Id"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="FirstName_Update">FirstName</label>
+							<input type="text" class="form-control" id="FirstName_Update" name="FirstName" placeholder="Enter FirstName"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="LastName_Update">LastName</label>
+							<input type="text" class="form-control" id="LastName_Update" name="LastName" placeholder="Enter LastName"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Phone_Update">Phone</label>
+							<input type="text" class="form-control" id="Phone_Update" name="Phone" placeholder="Enter Phone"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Email_Update">Email</label>
+							<input type="email" class="form-control" id="Email_Update" name="Email" placeholder="Enter Email"/>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="Address_Update">Address</label>
+							<input type="text" class="form-control" id="Address_Update" name="Address" placeholder="Enter Address"/>
+						</div>
+					
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="City_Update">City</label>
+							<select class="form-control" id="City_Update" name="City" placeholder="Select City">
+
+							</select>
+						</div>
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="State_Update">State</label>
+							<select class="form-control" id="State_Update" name="State" placeholder="Select State">
+
+							</select>
+						</div>
+
+						<div class="form-group col-lg-4 col-md-6">
+							<label for="ZipCode_Update">ZipCode</label>
+							<input type="text" class="form-control" id="ZipCode_Update" name="ZipCode" placeholder="Enter ZipCode"/>
+						</div>
+						
+						<div class="m-2 col-sm-12 text-center">
+							<button type="button" id="form_update_close" class="btn btn-danger">Close</button>
+							<button type="submit" class="btn btn-success">Save</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+@section Scripts {
+
+<script>
+
+// Definition
+
+var baseUrl = "https://localhost:44310/api/";
+var itemList = [];
+var selectedItem = null;
+var selectedIndex = -1;
+
+var getAllItems = function() {
+
+	$("#table_items").show();
+    $("#loading").show();
+
+	$.get(baseUrl + "Authors", function(data, status)
+	{
+        if (status == "success") {
+			$("#loading").hide(0.5);
+            itemList = data;
+            console.log(itemList);
+            renderItems(itemList);
+        }
+        else {
+            alert(data);
+		}
+	});
+
+}
+
+var renderItems = function(dataset) {
+            
+    let dataRow = "";
+	
+	dataset.forEach((item, idx) => {
+        dataRow += 
+		`
+		<tr id="${item.id}">
+			<td>${item.id}</td>
+			<td>${item.fullName}</td>
+			<td>${item.phone}</td>
+			<td>${item.email}</td>
+			<td>${item.address}</td>
+			<td>${item.city.name}</td>
+			<td>${item.state.name}</td>
+			<td>${item.zipCode}</td>
+			<td>
+				<button name="btn-update" class="btn btn-success m-1" value="${idx}">Edit</button>
+				<button name="btn-delete" class="btn btn-danger m-1" value="${idx}">Remove</button>
+			</td>
+		<tr>
+		`;
+    });
+
+    $("#table_items tbody").html(dataRow);
+    addFillDataEvent();
+
+}
+
+var addFillDataEvent = () => {
+	$("button[name='btn-update']").click(updateBtnClicked);
+	$("button[name='btn-delete']").click(deleteBtnClicked);
+}
+
+var updateBtnClicked = (e) => {
+
+    console.log("update clicked!");
+    let idx = e.currentTarget.value;
+    selectedItem = itemList[idx];
+    selectedIndex = idx;
+
+    fillInfo(selectedItem);
+
+	$("#form_update").show(0.8);
+    $("#form_create").hide(0.8);
+}
+
+var fillInfo = function(item) {
+    $("#Id_Update").val(item.id);
+    $("#FirstName_Update").val(item.firstName);
+    $("#LastName_Update").val(item.lastName);
+    $("#Phone_Update").val(item.phone);
+    $("#Email_Update").val(item.email);
+    $("#Address_Update").val(item.address);
+    $("#City_Update").val(item.city.id);
+    $("#State_Update").val(item.state.id);
+    $("#ZipCode_Update").val(item.zipCode);
+};
+
+var deleteBtnClicked = (e) => {
+	console.log("delete clicked!");
+            
+	let idx = e.currentTarget.value;
+	let deleteSelectedItem = itemList[idx];
+    console.log(idx);
+    console.log(deleteSelectedItem);
+    if (confirm(`Delete author with Id=${deleteSelectedItem.id}? You cannot reverse data!`)) {
+				
+		$.ajax({
+		type: 'delete',
+        headers: {
+			"Content-Type": "application/json"
+		},
+		url: baseUrl + "Authors" + "/" + deleteSelectedItem.id,
+		success: function () {
+			alert('Request was successful.');
+            if (deleteSelectedItem === selectedItem) {
+				selectedItem = null;
+				selectedIndex = -1;
+			}
+            $(`#${deleteSelectedItem.id}`).hide(1);
+		},
+		error: function (err) {
+			alert('An error occurred: ' + err.responseText);
+			console.log(err.responseText);
+		},
+	});
+	}
+}
+
+var getOptions = function(endpoint, DOM) {
+
+	$.get(baseUrl + "AppTypes/" + endpoint, function(data, status)
+	{
+        if (status == "success") {
+            console.log(data);
+            filloptionsToSelectBox(DOM, data);
+        }
+        else {
+            alert(data.responseText);
+		}
+	});
+}
+
+var filloptionsToSelectBox = function(DOM, dataset) {
+    
+	let dataRow = "";
+
+	dataset.forEach((option, idx) => {
+        dataRow += 
+		`
+		<option value=${option.id}>${option.name}</option>
+		`;
+    });
+
+    DOM.append(dataRow);
+}
+
+$("#btn-refresh").click(getAllItems);
+
+$("#form_update_close").click(() => {
+    $("#form_update").hide(1);
+})
+
+$("#btn-create").click(() => {
+
+	$("#form_create").show(1);
+});
+
+$("#form_create_close").click(() => {
+    $("#form_create").hide(1);
+})
+
+var Init = function() {
+	$("#loading").hide();
+    $("#table_items").hide();
+    $("#form_update").hide();
+    $("#form_create").hide();
+
+    getAllItems();
+    getOptions("GetCities", $("select[name='City']"));
+    getOptions("GetStates", $("select[name='State']"));
+    getOptions("GetCountries", $("select[name='Country']"));
+}();
+
+// create publisher use ajax
+var frm = $('#form_create');
+frm.submit(function (e) {
+	// don't submit form yet
+	e.preventDefault();
+
+    var object = {};
+	// get value from form stackoverflow
+	(new FormData(e.target)).forEach(function(value, key){
+		// check can parse from string to int or not
+		if(key != "Phone" && key != "ZipCode" && !isNaN(value)){
+			value = parseFloat(value);
+		}
+		object[key] = value;
+	});
+
+	var json = JSON.stringify(object);
+
+    console.log("Submit(post): " + json);
+
+	$.ajax({
+		type: 'post',
+        headers: {
+			"Content-Type": "application/json"
+		},
+		url: baseUrl + "Authors",
+		data: json,
+		// onsuccess
+		success: function (item) {
+			alert('Create publisher was successful, Id=' + item.id);
+				console.log(item);
+		},
+		// onerror
+		error: function (err) {
+			alert('An error occurred: ' + err.responseText);
+			console.log(err.responseText);
+		},
+	});
+});
+
+
+// update publisher use ajax
+var updateFrm = $('#form_update');
+updateFrm.submit(function (e) {
+	// don't submit form yet
+	e.preventDefault();
+
+	var object = {};
+	// get value from form stackoverflow
+	(new FormData(e.target)).forEach(function (value, key) {
+		// check can parse from string to int or not
+		if (key != "Phone" && key != "ZipCode" && !isNaN(value)) {
+			value = parseFloat(value);
+		}
+		object[key] = value;
+	});
+
+	var json = JSON.stringify(object);
+
+	console.log("Submit(put): " + json);
+
+	$.ajax({
+		type: 'put',
+		headers: {
+			"Content-Type": "application/json"
+		},
+		url: baseUrl + "Authors",
+		data: json,
+		// onsuccess
+		success: function (item) {
+			alert('Update publisher was successful, Id=' + item.id);
+			console.log(item);
+
+			let newRow =
+				`
+				<tr id="${item.id}">
+					<td>${item.id}</td>
+					<td>${item.fullName}</td>
+					<td>${item.phone}</td>
+					<td>${item.email}</td>
+					<td>${item.address}</td>
+					<td>${item.city.name}</td>
+					<td>${item.state.name}</td>
+					<td>${item.zipCode}</td>
+					<td>
+						<button name="btn-update" class="btn btn-success m-1" value="${selectedIndex}">Edit</button>
+						<button name="btn-delete" class="btn btn-danger m-1" value="${selectedIndex}">Remove</button>
+					</td>
+				<tr>
+				`;
+			$(`#${item.id}`).replaceWith(newRow); 
+			itemList[selectedIndex] = item;
+			addFillDataEvent();
+		},
+		// onerror
+		error: function (err) {
+			alert('An error occurred: ' + err.responseText);
+			console.log(err.responseText);
+		},
+	});
+});
+
+</script>
+
+}

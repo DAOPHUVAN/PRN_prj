@@ -1,0 +1,45 @@
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.json
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.dev.json
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.dll
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.AssemblyReference.cache
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.dll
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.genruntimeconfig.cache
+D:\Chien\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.json
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.dev.json
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.dll
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.dll
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.genruntimeconfig.cache
+C:\Users\TechCare\Desktop\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.json
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.dev.json
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.dll
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.dll
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\DataLayer.genruntimeconfig.cache
+C:\Users\Hello\Downloads\PRN231 (1)\PRN231\Downloads\BookManagement-master\BookManagement-master\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
